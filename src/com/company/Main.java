@@ -4,6 +4,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import javax.swing.*;
+import java.awt.*;
 import java.util.Scanner;
 import static java.lang.System.*;
 
@@ -11,6 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
+        int loop = 0;
         String loopRes;
         Scanner input = new Scanner(in);
         try {
@@ -29,13 +31,21 @@ public class Main {
                 }
                 out.print("Wanna see me do it again? (Y/N): ");
                 loopRes = input.next();
-                if(loopRes.equalsIgnoreCase("Y"));{
+                if(loopRes.equalsIgnoreCase("n")) {
+                    if (JOptionPane.showConfirmDialog(null, "Are you sure?", "WARNING",
+                            JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
+                        System.exit(0);
+                    } else {
+                        continue;
+                    }
+
+                }
+                else{
                     out.print("Continuing...");
+                    continue;
                 }
 
-
-
-            }while (loopRes.equalsIgnoreCase("Y"));
+            }while (loop == 0);
 
         } catch (Exception e) {
 
@@ -43,9 +53,7 @@ public class Main {
 
         }
 
-
     }
-
 
     // ahhhhhhh don't put stuff here
 
@@ -53,6 +61,5 @@ public class Main {
 
         JOptionPane.showMessageDialog(null, s, "Oops..." +
                 s1, JOptionPane.INFORMATION_MESSAGE);
-
     }
 }
