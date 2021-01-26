@@ -11,7 +11,9 @@
 * My College
 * *CATS* 👁👄👁
 ---
-h3 align="center">Feel free to contact me either on GitHub or Discord if you have advice or questions. K thx</br>
+
+<h3 align="center">Feel free to contact me either on GitHub or Discord if you have advice or questions. K thx</br>
+
 ---
 <p align = "center">
     <a href="https://discord.gg/m6RPFpzDuD"><img align="center" src="https://raw.githubusercontent.com/im-zach/im-zach/main/Discord-Logo-Color.png" alt="Discord server" /></a>
