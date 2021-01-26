@@ -29,6 +29,7 @@ public class info {
         out.println("6 - Scrape Indeed for Software Dev Jobs");
         out.println("7 - Scrape FBI's Most Wanted Cyber Criminals");
         out.println("8 - Scrape World COVID Statistics");
+        out.println("9 - Scrape r/WallStreetBets");
         out.print("Enter choice: ");
         selection = input.nextInt();
         return selection;
