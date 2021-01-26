@@ -3,8 +3,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
-import javax.print.Doc;
 import javax.swing.*;
 import java.util.Scanner;
 import static java.lang.System.*;
@@ -15,7 +13,7 @@ public class Main {
         // write your code here
         int loop = 0;
         int userChoice;
-        String loopRes, searchParam, usrOpt;
+        String loopRes, searchParam;
         Scanner input = new Scanner(in);
         try {
             do {
@@ -25,7 +23,7 @@ public class Main {
                     Elements links = doc.select("a[href]");
                     for (Element link : links) {
                         // get the value from the href attribute
-                        out.println("\nlink: " + link.attr("href"));
+                        out.println("\nlink: " + link.absUrl("href"));
                     }
                 } else {
                     if(userChoice==2){
@@ -40,7 +38,7 @@ public class Main {
                         Elements links = doc.select("a[href]");
                         for (Element link : links) {
                             // get the value from the href attribute
-                            out.println("\nlink: " + link.attr("href"));
+                            out.println("\nlink: " + link.absUrl("href"));
                             out.println("text: " + link.text());
                         }
 
@@ -55,7 +53,7 @@ public class Main {
                             Elements links = doc.select("a[href]");
                             for (Element link : links) {
                                 // get the value from the href attribute
-                                out.println("\nlink: " + link.attr("href"));
+                                out.println("\nlink: " + link.absUrl("href"));
                                 out.println("text: " + link.text());
                             }
 
@@ -70,9 +68,37 @@ public class Main {
                                 Elements links = doc.select("a[href]");
                                 for (Element link : links) {
                                     // get the value from the href attribute
-                                    out.println("\nlink: " + link.attr("href"));
+                                    out.println("\nlink: " + link.absUrl("href"));
                                     out.println("text: " + link.text());
                                 }
+                            }
+                            else{
+                                if(userChoice==5){
+                                    Document doc = Jsoup.connect("https://www.sccsc.edu/schoolslist/CET-1/computers.php").get();
+                                    String title = doc.title();
+                                    out.println("title: "+title);
+
+                                    Elements links = doc.select("a[href]");
+                                    for (Element link:links){
+                                        out.println("\nlink: "+link.absUrl("href"));
+                                        out.println("text: "+link.text());
+                                    }
+                                }
+                                else{
+                                    if(userChoice==6){
+                                        Document doc = Jsoup.connect("https://www.indeed.com/jobs?q=software+developer&l=Spartanburg%2C+SC").get();
+                                        String title = doc.title();
+                                        out.println("title: "+title);
+
+                                        Elements links = doc.select("a[href]");
+                                        for (Element link:links){
+                                            out.println("\nlink: "+link.absUrl("href"));
+                                            out.println("text: "+link.text());
+                                        }
+                                    }
+
+                                }
+
                             }
                         }
                     }
@@ -116,15 +142,15 @@ public class Main {
 
         int selection;
         Scanner input = new Scanner(System.in);
-
-        /***************************************************/
-
+        //menu stuff
         out.println("What are we scraping today?");
         out.println("-------------------------\n");
         out.println("1 - Cat Picture");
         out.println("2 - Scrape the web");
         out.println("3 - Weather Scrape");
         out.println("4 - NASDAQ Scrape (Market Activity, Stocks)");
+        out.println("5 - Scrape SCC's Computer Tech. Page");
+        out.println("6 - Scrape Indeed for Software Dev Jobs");
         out.print("Enter choice: ");
         selection = input.nextInt();
         return selection;
