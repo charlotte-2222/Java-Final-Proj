@@ -1,10 +1,4 @@
 package com.company;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
-
-import javax.security.auth.callback.ConfirmationCallback;
 import javax.swing.*;
 import java.util.Scanner;
 import static com.company.info.menu;
@@ -14,7 +8,6 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        int shit =0;
         Scanner input = new Scanner(in);
         try {
             do {
@@ -47,12 +40,11 @@ public class Main {
                             "Sure?",
                             "Warning",
                             JOptionPane.YES_NO_OPTION) ==
-                            JOptionPane.YES_OPTION)
-                    {
+                            JOptionPane.YES_OPTION) {
                         exit(0);
                     }
                 }
-            }while(shit==0);
+            }while(true);
 
         } catch (Exception e) {
 
