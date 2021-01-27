@@ -20,3 +20,7 @@
 </p>
 
 ---
+
+<p align = "center">
+    <a href="https://discord.gg/m6RPFpzDuD"><img align="center" src="https://raw.githubusercontent.com/im-zach/Java-Final-Proj/master/8F5161A0-E088-4713-839A-6968C984CD85_4_5005_c.jpeg" alt="this is meme" /></a>
+</p>
