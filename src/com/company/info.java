@@ -25,6 +25,7 @@ public class info {
         out.println("7 - Scrape FBI's Most Wanted Cyber Criminals");
         out.println("8 - Scrape World COVID Statistics");
         out.println("9 - Scrape Top 100 Movies of All Time.");
+        //out.println("10 - Scrape Associated Press' Twitter Feed");
         out.print("Enter choice: ");
         selection = input.nextInt();
         return selection;

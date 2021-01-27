@@ -23,7 +23,9 @@ public class Main {
                     case 6 -> indeed.jobSearch();
                     case 7 -> fbi.fedScrap();
                     case 8 -> covid.covidFacts();
-                    case 9 -> movies.top100AT();}
+                    case 9 -> movies.top100AT();
+                    //case 10 -> apTwit.apTweet();
+                    }
                 out.println("Run again?");
                 out.print("Y/N: ");
                 String loopRes = input.next();
