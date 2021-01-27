@@ -15,11 +15,10 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         int shit =0;
-        int userChoice = menu();
         Scanner input = new Scanner(in);
         try {
             do {
-
+                int userChoice = menu();
                 if (userChoice == 1) {
                     cat.catSearch();
                 } else if (userChoice == 2) {
@@ -51,13 +50,8 @@ public class Main {
                             JOptionPane.YES_OPTION)
                     {
                         exit(0);
-                    } else if(JOptionPane.YES_NO_OPTION==
-                            JOptionPane.NO_OPTION)
-                    {
-                        continue;
                     }
                 }
-
             }while(shit==0);
 
         } catch (Exception e) {
