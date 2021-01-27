@@ -12,7 +12,36 @@ public class Main {
         try {
             do {
                 int userChoice = menu();
-                if (userChoice == 1) {
+                switch (userChoice){
+                    case 1:
+                        cat.catSearch();
+                        break;
+                    case 2:
+                        google.googleSearch();
+                        break;
+                    case 3:
+                        weather.weathCheck();
+                        break;
+                    case 4:
+                        nasdaq.nasDaq();
+                        break;
+                    case 5:
+                        scc.sccClass();
+                        break;
+                    case 6:
+                        indeed.jobSearch();
+                        break;
+                    case 7:
+                        fbi.fedScrap();
+                        break;
+                    case 8:
+                        covid.covidFacts();
+                        break;
+                    case 9:
+                        movies.top100AT();
+                        break;
+                }
+               /* if (userChoice == 1) {
                     cat.catSearch();
                 } else if (userChoice == 2) {
                     google.googleSearch();
@@ -30,8 +59,7 @@ public class Main {
                     covid.covidFacts();
                 } else if (userChoice == 9) {
                     movies.top100AT();
-                }
-
+                */
                 out.println("Run again?");
                 out.print("Y/N: ");
                 String loopRes = input.next();
