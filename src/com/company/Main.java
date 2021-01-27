@@ -23,8 +23,7 @@ public class Main {
                     case 6 -> indeed.jobSearch();
                     case 7 -> fbi.fedScrap();
                     case 8 -> covid.covidFacts();
-                    case 9 -> movies.top100AT();
-                }
+                    case 9 -> movies.top100AT();}
                 out.println("Run again?");
                 out.print("Y/N: ");
                 String loopRes = input.next();
@@ -34,13 +33,8 @@ public class Main {
                             "Warning",
                             JOptionPane.YES_NO_OPTION) ==
                             JOptionPane.YES_OPTION) {
-                        exit(0);
-                    }
-                }
-            }while(true);
-        } catch (Exception e) {
-            info.infoBox("Ah crap!\n" + "I messed up...", "");
-        }
-    }
-    /* oof don't put stuff here */
+                        exit(0); }}
+            }while(true);}catch (Exception e)
+        {info.infoBox("Ah crap!\n" + "I messed up...", "");}
+    }/* oof don't put stuff here */
 }
