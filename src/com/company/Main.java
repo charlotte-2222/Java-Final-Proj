@@ -12,54 +12,17 @@ public class Main {
         try {
             do {
                 int userChoice = menu();
-                switch (userChoice){
-                    case 1:
-                        cat.catSearch();
-                        break;
-                    case 2:
-                        google.googleSearch();
-                        break;
-                    case 3:
-                        weather.weathCheck();
-                        break;
-                    case 4:
-                        nasdaq.nasDaq();
-                        break;
-                    case 5:
-                        scc.sccClass();
-                        break;
-                    case 6:
-                        indeed.jobSearch();
-                        break;
-                    case 7:
-                        fbi.fedScrap();
-                        break;
-                    case 8:
-                        covid.covidFacts();
-                        break;
-                    case 9:
-                        movies.top100AT();
-                        break;
+                switch (userChoice) {
+                    case 1 -> cat.catSearch();
+                    case 2 -> google.googleSearch();
+                    case 3 -> weather.weathCheck();
+                    case 4 -> nasdaq.nasDaq();
+                    case 5 -> scc.sccClass();
+                    case 6 -> indeed.jobSearch();
+                    case 7 -> fbi.fedScrap();
+                    case 8 -> covid.covidFacts();
+                    case 9 -> movies.top100AT();
                 }
-               /* if (userChoice == 1) {
-                    cat.catSearch();
-                } else if (userChoice == 2) {
-                    google.googleSearch();
-                } else if (userChoice == 3) {
-                    weather.weathCheck();
-                } else if (userChoice == 4) {
-                    nasdaq.nasDaq();
-                } else if (userChoice == 5) {
-                    scc.sccClass();
-                } else if (userChoice == 6) {
-                    indeed.jobSearch();
-                } else if (userChoice == 7) {
-                    fbi.fedScrap();
-                } else if (userChoice == 8) {
-                    covid.covidFacts();
-                } else if (userChoice == 9) {
-                    movies.top100AT();
-                */
                 out.println("Run again?");
                 out.print("Y/N: ");
                 String loopRes = input.next();
