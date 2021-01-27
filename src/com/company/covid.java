@@ -3,9 +3,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
-
 import static java.lang.System.out;
 public class covid {
     public static void covidFacts() throws IOException {
@@ -18,5 +16,4 @@ public class covid {
             out.println("text: " + link.text());
         }
     }
-
 }

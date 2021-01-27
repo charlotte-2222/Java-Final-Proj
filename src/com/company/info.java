@@ -1,23 +1,18 @@
 package com.company;
 import javax.swing.*;
 import java.util.Scanner;
-import com.company.Main.*;
 import static java.lang.System.out;
-
-
 public class info {
     public static void infoBox(String s, String s1){
 
         JOptionPane.showMessageDialog(null, s, "Oops..." +
                 s1, JOptionPane.INFORMATION_MESSAGE);
     }
-
-
     public static int menu() {
-        int selection, userChoice;
+        int selection;
         Scanner input = new Scanner(System.in);
-        //menu stuff
-        out.println("In most cases, you will need to scroll 'up' the console to get information\n" +
+        out.println("-------------------------");
+        out.println("\nIn most cases, you will need to scroll 'up' the console to get information\n" +
                 "from the webpage. This program scrapes *THE WHOLE* page, except in the second option.\n");
         out.println("What are we scraping today?");
         out.println("-------------------------\n");
@@ -34,5 +29,4 @@ public class info {
         selection = input.nextInt();
         return selection;
     }
-
 }

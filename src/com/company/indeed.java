@@ -3,9 +3,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
-
 import static java.lang.System.out;
 public class indeed {
     public static void jobSearch() throws IOException {
@@ -18,7 +16,5 @@ public class indeed {
             out.println("\nlink: "+link.absUrl("href"));
             out.println("text: "+link.text());
         }
-
     }
-
 }

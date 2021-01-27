@@ -4,7 +4,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
-
 import static java.lang.System.out;
 public class fbi {
     public static void fedScrap() throws IOException {
@@ -17,5 +16,4 @@ public class fbi {
             out.println("text: " + link.text());
         }
     }
-
 }

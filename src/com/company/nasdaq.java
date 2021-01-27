@@ -3,9 +3,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-
 import java.io.IOException;
-
 import static java.lang.System.out;
 public class nasdaq {
     public static void nasDaq() throws IOException {
@@ -21,5 +19,4 @@ public class nasdaq {
             out.println("text: " + link.text());
         }
     }
-
 }

@@ -3,11 +3,13 @@ import javax.swing.*;
 import java.util.Scanner;
 import static com.company.info.menu;
 import static java.lang.System.*;
-
 public class Main {
-
     public static void main(String[] args) {
-        // write your code here
+      /*
+         Webscraper - this is my Project for Java class
+         Have not determined if this will be bigger in scale
+         than the submitted assignment; I will keep this proj. running.
+        */
         Scanner input = new Scanner(in);
         try {
             do {
@@ -36,16 +38,9 @@ public class Main {
                     }
                 }
             }while(true);
-
         } catch (Exception e) {
-
             info.infoBox("Ah crap!\n" + "I messed up...", "");
-
         }
     }
-
-    // ahhhhhhh don't put stuff here
-
+    /* oof don't put stuff here */
 }
-
-

@@ -5,7 +5,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import java.io.IOException;
 import static java.lang.System.out;
-
 public class movies {
     public static void top100AT() throws IOException {
         Document doc = Jsoup.connect("https://www.rottentomatoes.com/top/bestofrt/").get();
@@ -19,5 +18,4 @@ public class movies {
             out.println("text: " + link.wholeText());
         }
     }
-
 }
